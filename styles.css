@@ -137,7 +137,6 @@ button:hover {
   transform: scale(1.05) translateY(2px);
   transition: transform 0.3s;
 }
-
 .section h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -381,7 +380,7 @@ button:hover {
   border-radius: 25px;
   font-size: 1em;
   color: #333;
-  background-color: #fafafa;
+  background-color: #fcfaf2;
   outline: none;
   transition: border-color 0.3s ease;
   font-family: "Courier New", Courier, monospace;
