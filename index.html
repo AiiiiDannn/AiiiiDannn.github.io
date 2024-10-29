@@ -1,9 +1,353 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aiden Hai - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!--Link the script.js file to the HTML document-->
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home">AH</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-<body>
-  <h1>Aiden Hai</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
+    <!-- Main Content -->
+    <section id="home" class="section main-content">
+      <div class="profile">
+        <img
+          src="./assets/Aiden photo.jpg"
+          alt="Aiden Hai"
+          class="profile-pic"
+        />
+        <h1>Aiden Hai</h1>
+        <p>I assume I'm a <span>Entry-Level Web Developer...</span></p>
+        <a href="./assets/Aiden Hai's Resume.pdf" download>
+          <button className="hover">Resume</button>
+        </a>
+      </div>
+    </section>
 
+    <!-- About-Me Section -->
+    <section id="about-me" class="section">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <!-- About Me Text -->
+        <div class="about-text">
+          <p>
+            Aiden Hai is a passionate college student pursuing dual degrees in
+            Informatics and Cognitive Science at the University of California,
+            Irvine. With a solid foundation in programming languages and a
+            strong interest in web development, web development is for me a
+            field where there's always something new to explore and innovate.
+          </p>
+          <p>
+            When I'm away from my desk, you'll likely find me cooking in the
+            kitchen, staying active, or dying in CS2.<br />
+            <span
+              >I am actively seeking an internship to apply my skills and gain
+              hands-on experience in the field.
+            </span>
+          </p>
+
+          <div class="soc-med">
+            <a href="https://www.twitter.com">
+              <img
+                src="./assets/icons/linking icons/twitter.svg"
+                alt="Twitter"
+              />
+            </a>
+            <a href="https://github.com/AiiiiDannn">
+              <img
+                src="./assets/icons/linking icons/github.svg"
+                alt="Github icon"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/aiden-hai-0b01282a9/">
+              <img
+                src="./assets/icons/linking icons/linkedin.svg"
+                alt="LinkedIn icon"
+              />
+            </a>
+            <a href="mailto:xhai2@uci.edu">
+              <img
+                src="./assets/icons/linking icons/mail.svg"
+                alt="Mail icon"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="skills">
+          <h3>Skills</h3>
+
+          <!-- First Group -->
+          <ul class="skills-list">
+            <li>
+              <img src="./assets/icons/python.svg" alt="Python Icon" /> Python
+            </li>
+            <li><img src="./assets/icons/java.svg" alt="Java Icon" /> Java</li>
+            <li><img src="./assets/icons/c++.svg" alt="C++ Icon" /> C++</li>
+            <li>
+              <img src="./assets/icons/javascript.svg" alt="JavaScript Icon" />
+              JavaScript
+            </li>
+            <li><img src="./assets/icons/html5.svg" alt="HTML Icon" /> HTML</li>
+            <li><img src="./assets/icons/r.svg" alt="R Icon" /> R</li>
+          </ul>
+
+          <!-- Dividing Line -->
+          <div class="divider"></div>
+
+          <!-- Second Group -->
+          <ul class="skills-list">
+            <li><img src="./assets/icons/css.svg" alt="CSS Icon" /> CSS</li>
+            <li>
+              <img src="./assets/icons/figma.svg" alt="Figma Icon" /> Figma
+            </li>
+            <li>
+              <img src="./assets/icons/react.svg" alt="React Icon" /> React
+            </li>
+          </ul>
+
+          <!-- Dividing Line -->
+          <div class="divider"></div>
+
+          <!-- Third Group -->
+          <ul class="skills-list">
+            <li><img src="./assets/icons/git.svg" alt="Git Icon" /> Git</li>
+            <li>
+              <img src="./assets/icons/github.svg" alt="GitHub Icon" /> GitHub
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+
+      <div class="experience-container">
+        <!-- Research Assistant Role 2 -->
+        <div class="experience">
+          <h3>Research Assistant</h3>
+          <span class="experience-organization">UC Irvine CARL</span>
+          <span class="experience-dates">09.2024 - Present</span>
+          <ul>
+            <li>
+              Developed and integrated a binocular vision system for TurtleBot,
+              enhancing its ability to perceive depth and navigate autonomously
+              in complex environments.
+            </li>
+            <li>
+              Collaborated on the robot’s adaptive shell behavior, adjusting
+              responses based on environmental changes.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Peer Academic Advisor Role -->
+        <div class="experience">
+          <h3>Peer Academic Advisor</h3>
+          <span class="experience-organization">School of Social Sciences</span>
+          <span class="experience-dates">04.2024 - Present</span>
+          <ul>
+            <li>
+              Advised students on academic planning, assisting with course
+              selection and progress checks to align studies with career goals.
+            </li>
+            <li>
+              Provided personalized guidance, referring students to resources to
+              foster success and engagement.
+            </li>
+            <li>
+              Collaborated with faculty and staff to support academic
+              initiatives and enhance the student experience.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Research Assistant Role 1-->
+        <div class="experience">
+          <h3>Undergraduate Research Assistant</h3>
+          <span class="experience-organization">UC Irvine LDNLab</span>
+          <span class="experience-dates">09.2023 - Present</span>
+          <ul>
+            <li>
+              Assisted in research focused on understanding how intelligence
+              systems are constructed and their influence on decision-making and
+              social conformity.
+            </li>
+            <li>
+              Arranged and managed participant experiments online, guiding
+              participants through experimental procedures, maintaining
+              compliance with research protocols.
+            </li>
+            <li>
+              Maintained data integrity by ensuring smooth execution of
+              experiments.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Learning Assistant Role -->
+        <div class="experience">
+          <h3>Learning Assistant</h3>
+          <span class="experience-organization"
+            >I&C SCI 6D: Boolean Logic and Discrete Structures</span
+          >
+          <span class="experience-dates">09.2023 - 12.2023</span>
+          <ul>
+            <li>
+              Facilitated discussions and problem-solving during lectures,
+              supporting students with course content.
+            </li>
+            <li>
+              Hosted study hall sessions to assist with homework and exam
+              preparation.
+            </li>
+            <li>
+              Tested exam papers for difficulty and accuracy, supervised exams,
+              and ensured complete submissions.
+            </li>
+            <li>
+              Encouraged students to grasp underlying concepts and shared
+              personal learning strategies.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <!-- Project Card 1 -->
+        <div class="project-card">
+          <img
+            src="./assets/icons/airport.svg"
+            alt="Airport logo"
+            class="project-icon"
+          />
+          <h3>Airport Database</h3>
+          <p>
+            A Python-based GUI project for interacting with a SQLite database,
+            allowing users to query and update airport data.
+          </p>
+          <a
+            href="https://github.com/AiiiiDannn/Airport-Base"
+            target="_blank"
+            class="github-link"
+          >
+            <img src="./assets/icons/github.svg" alt="GitHub Icon" />
+          </a>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="project-card">
+          <img
+            src="./assets/icons/music.svg"
+            alt="Music logo"
+            class="project-icon"
+          />
+          <h3>Music Library</h3>
+          <p>
+            A Java-based User Interface that can store and fetch music
+            information.
+          </p>
+          <a
+            href="https://github.com/AiiiiDannn/Music-Frame"
+            target="_blank"
+            class="github-link"
+          >
+            <img src="./assets/icons/github.svg" alt="GitHub Icon" />
+          </a>
+        </div>
+
+        <!--Project 3 (MIP)-->
+        <div class="project-card">
+          <img
+            src="./assets/icons/question-mark.svg"
+            alt="Question mark"
+            class="project-icon"
+          />
+          <h3>More In Progress</h3>
+          <p>I hope more projects can be added here</p>
+          <a
+            href="https://github.com/AiiiiDannn"
+            target="_blank"
+            class="github-link"
+          >
+            <img src="./assets/icons/github.svg" alt="GitHub Icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Name"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Email"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            placeholder="Subject"
+          />
+        </div>
+
+        <div class="form-group">
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            required
+            placeholder="Message"
+          ></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </body>
 </html>
