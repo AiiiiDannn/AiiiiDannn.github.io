@@ -1,6 +1,4 @@
-# Aiden Hai's Personal Portfolio
-
-# Aiden Hai 的个人网站
+# Aiden Hai's Personal Portfolio / Aiden Hai 的个人网站
 
 Welcome to my personal portfolio site! This is a web-based showcase of my work in **front-end development** and **UI/UX design**, built with HTML and CSS.
 
@@ -39,28 +37,18 @@ I'm a student at **UC Irvine**, double majoring in **Informatics** and **Cogniti
 - **CSS3**
 - **JavaScript**
 - **Figma**（UI Prototyping / UI 设计）
+- etc.
 
 ---
 
-## Folder Structure / 项目结构
-
-```
-.
-├── assets/              # 图片与图标资源
-├── styles.css           # 所有页面样式
-├── index.html           # 主网页结构
-├── README.md            # 本文件
-```
-
 ## Contact / 联系方式
 
-欢迎交流与联系：
-
-- Email: xhai2@uci.edu
+- Email: xhai2@uci.edu / haiaiden010@gmail.com
 - [LinkedIn](https://www.linkedin.com/in/aiden-hai-0b01282a9/)
 - [GitHub](https://github.com/AiiiiDannn)
 
 ---
 
-Thanks for visiting 💜  
-感谢浏览 💜
+Thanks for visiting ♥️
+
+感谢浏览 ♥️
