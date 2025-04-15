@@ -28,8 +28,8 @@ EMAIL: xhai2@uci.edu
       </div>
       <ul class="nav-links">
         <li><a href="#about-me">About Me</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experiencs</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -43,8 +43,13 @@ EMAIL: xhai2@uci.edu
           class="profile-pic"
         />
         <h1>Aiden Hai</h1>
-        <p>I assume I'm a <span>Entry-Level Web Developer...</span></p>
-        <a href="./assets/Aiden_Resume.pdf" download class="button-link">
+        <p>Just call me a <span>Entry-Level Web Developer...</span></p>
+        <a
+          href="./assets/Aiden_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button-link"
+        >
           <button>Resume</button>
         </a>
       </div>
@@ -57,55 +62,42 @@ EMAIL: xhai2@uci.edu
         <!-- About Me Text -->
         <div class="about-text">
           <p>
-            Aiden Hai is a passionate college student pursuing dual degrees in
-            Informatics and Cognitive Science at the University of California,
-            Irvine. With a solid foundation in programming languages and a
-            strong interest in web development, web development is for me a
-            field where there's always something new to explore and innovate.
+            Aiden Hai is a curious and motivated college student double majoring
+            in Informatics and Cognitive Science at the University of
+            California, Irvine. With a strong foundation in programming and a
+            growing passion for web development, I enjoy building things that
+            are not just functional, but also intuitive and people-friendly.
+            When I'm not at my desk, you'll probably find me experimenting in
+            the kitchen, going for a workout, or getting clutched on (and dying)
+            in
+            <a
+              href="https://steamcommunity.com/profiles/76561199028352399/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Counter Strike</a
+            >.
           </p>
           <p>
-            When I'm away from my desk, you'll likely find me cooking in the
-            kitchen, staying active, or dying in CS2.<br />
+            I am especially drawn to front-end and UI/UX work, where design and
+            logic meet. I love solving problems by thinking from the user's
+            point of view and constantly finding better ways to communicate
+            ideas through code and layout.
+            <br />
             <span
-              >I am actively seeking an internship to apply my skills and gain
-              hands-on experience in front-end development, software
-              development, and other related fields.
-            </span>
+              >I'm currently looking for an internship where I can keep
+              learning, build real-world experience, and contribute to projects
+              in front-end development, UI/UX design, or related areas.</span
+            >
           </p>
-
-          <div class="soc-med">
-            <a href="https://www.twitter.com">
-              <img
-                src="./assets/icons/linking_icons/twitter.svg"
-                alt="Twitter"
-              />
-            </a>
-            <a href="https://github.com/AiiiiDannn">
-              <img
-                src="./assets/icons/linking_icons/github.svg"
-                alt="Github icon"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/aiden-hai-0b01282a9/">
-              <img
-                src="./assets/icons/linking_icons/linkedin.svg"
-                alt="LinkedIn icon"
-              />
-            </a>
-            <a href="mailto:xhai2@uci.edu">
-              <img
-                src="./assets/icons/linking_icons/mail.svg"
-                alt="Mail icon"
-              />
-            </a>
-          </div>
         </div>
 
         <div class="skills">
           <h3>Skills</h3>
 
-          <!-- First Group -->
-          <ul class="skills-list">
+          <!-- Programming Languages -->
+          <h4 class="skills-group-title">Programming Languages</h4>
+          <ul class="skills-list grid-2col">
             <li>
               <img src="./assets/icons/python.svg" alt="Python Icon" /> Python
             </li>
@@ -117,13 +109,15 @@ EMAIL: xhai2@uci.edu
             </li>
             <li><img src="./assets/icons/html5.svg" alt="HTML Icon" /> HTML</li>
             <li><img src="./assets/icons/r.svg" alt="R Icon" /> R</li>
+            <li>
+              <img src="./assets/icons/matlab.svg" alt="Matlab Icon" /> MATLAB
+            </li>
           </ul>
-
-          <!-- Dividing Line -->
           <div class="divider"></div>
 
-          <!-- Second Group -->
-          <ul class="skills-list">
+          <!-- UX/UI & Front-End -->
+          <h4 class="skills-group-title">UX/UI & Front-End</h4>
+          <ul class="skills-list grid-2col">
             <li><img src="./assets/icons/css.svg" alt="CSS Icon" /> CSS</li>
             <li>
               <img src="./assets/icons/figma.svg" alt="Figma Icon" /> Figma
@@ -131,17 +125,12 @@ EMAIL: xhai2@uci.edu
             <li>
               <img src="./assets/icons/react.svg" alt="React Icon" /> React
             </li>
-            <li>
-              <img src="./assets/icons/angular.svg" alt="Angular Icon" />
-              Angular
-            </li>
           </ul>
-
-          <!-- Dividing Line -->
           <div class="divider"></div>
 
-          <!-- Third Group -->
-          <ul class="skills-list">
+          <!-- Tools -->
+          <h4 class="skills-group-title">Version Control & Tools</h4>
+          <ul class="skills-list grid-2col">
             <li><img src="./assets/icons/git.svg" alt="Git Icon" /> Git</li>
             <li>
               <img src="./assets/icons/github.svg" alt="GitHub Icon" /> GitHub
@@ -151,9 +140,92 @@ EMAIL: xhai2@uci.edu
       </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <!-- Project 1 -->
+        <div class="project-card-new">
+          <div class="project-info">
+            <h3>Career Support App</h3>
+            <p>
+              A UX-focused platform enabling students to share anonymous
+              job-seeking experiences and get peer-based resume feedback.
+              Developed with user interviews, affinity mapping, and
+              high-fidelity prototyping in Figma.
+            </p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span>Figma</span>
+                <span>User Research</span>
+                <span>Usability Testing</span>
+              </div>
+              <a
+                href="https://danisump.wixsite.com/collaborative-click"
+                target="_blank"
+                class="project-link"
+                >View Portfolio</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card-new">
+          <div class="project-info">
+            <h3>Travel Assistant Web App</h3>
+            <p>
+              Built a responsive itinerary planner with weather integration via
+              Tomorrow.io API. Features include category filters, modal-based
+              trip editing, and localStorage data persistence.
+            </p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>HTML/CSS</span>
+                <span>API Integration</span>
+              </div>
+              <a
+                href="https://github.com/AiiiiDannn/Trip-Assistant-Web-App"
+                target="_blank"
+                class="project-link"
+                >GitHub Repo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card-new">
+          <div class="project-info">
+            <h3>Discord UX Enhancement</h3>
+            <p>
+              Designed a user rating system to increase trustworthiness in
+              academic Discord communities. Created personas and prototypes in
+              Figma, simulating real-time interaction and usability within
+              existing UI.
+            </p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span>Figma</span>
+                <span>UX Design</span>
+                <span>Discord</span>
+              </div>
+              <a
+                href="https://www.figma.com/proto/Yewn0q32HlujFSUlOsEKTl/Discord-Rating-Figma?type=design&node-id=226-289&t=ZPMXCPfgPaZjoMwg-1&scaling=scale-down&page-id=14%3A3&starting-point-node-id=226%3A289"
+                target="_blank"
+                class="project-link"
+                >View Prototype</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Experience Section -->
     <section id="experience" class="section">
-      <h2>Experience</h2>
+      <h2>Experiences</h2>
 
       <div class="experience-container">
         <!-- Research Assistant Role 2 -->
@@ -163,13 +235,16 @@ EMAIL: xhai2@uci.edu
           <span class="experience-dates">09.2024 - Present</span>
           <ul>
             <li>
-              Developed and integrated a binocular vision system for TurtleBot,
-              enhancing its ability to perceive depth and navigate autonomously
-              in complex environments.
+              Developed a stereo vision system using CNNs and transfer learning
+              for real-time prey/predator detection.
             </li>
             <li>
-              Collaborated on the robot’s adaptive shell behavior, adjusting
-              responses based on environmental changes.
+              Implemented SLAM and episodic memory modules to enable adaptive
+              foraging strategies based on spatial-temporal context.
+            </li>
+            <li>
+              Collaborated across CS and CogSci teams to simulate biologically
+              inspired decision-making in a mobile robot.
             </li>
           </ul>
         </div>
@@ -181,16 +256,17 @@ EMAIL: xhai2@uci.edu
           <span class="experience-dates">04.2024 - Present</span>
           <ul>
             <li>
-              Advised students on academic planning, assisting with course
-              selection and progress checks to align studies with career goals.
+              Advised UCI students on course selection, degree progress checks,
+              GE and major requirements, and resource referrals.
             </li>
             <li>
-              Provided personalized guidance, referring students to resources to
-              foster success and engagement.
+              Helped students interpret academic policies and requirements,
+              offering personalized support across varied academic goals.
             </li>
             <li>
-              Collaborated with faculty and staff to support academic
-              initiatives and enhance the student experience.
+              Maintained a student-centered approach by actively listening to
+              individual concerns and guiding informed, goal-aligned academic
+              decisions.
             </li>
           </ul>
         </div>
@@ -199,21 +275,24 @@ EMAIL: xhai2@uci.edu
         <div class="experience">
           <h3>Undergraduate Research Assistant</h3>
           <span class="experience-organization">UC Irvine LDNLab</span>
-          <span class="experience-dates">09.2023 - Present</span>
+          <span class="experience-dates">09.2023 - 09.2024</span>
           <ul>
             <li>
-              Assisted in research focused on understanding how intelligence
-              systems are constructed and their influence on decision-making and
-              social conformity.
+              Supported research exploring how people make decisions in group
+              settings and how social influence affects their thinking.
             </li>
             <li>
-              Arranged and managed participant experiments online, guiding
-              participants through experimental procedures, maintaining
-              compliance with research protocols.
+              Set up and managed online experiments, making sure participants
+              could follow instructions and complete tasks smoothly.
             </li>
             <li>
-              Maintained data integrity by ensuring smooth execution of
-              experiments.
+              Observed how participants interacted with tasks and instructions,
+              and gave feedback to improve the flow and clarity of the
+              experience.
+            </li>
+            <li>
+              Monitored data collection to ensure everything ran properly and
+              results were accurate and usable.
             </li>
           </ul>
         </div>
@@ -227,88 +306,24 @@ EMAIL: xhai2@uci.edu
           <span class="experience-dates">09.2023 - 12.2023</span>
           <ul>
             <li>
-              Facilitated discussions and problem-solving during lectures,
-              supporting students with course content.
+              Helped students understand core concepts in Boolean logic and
+              discrete math by breaking down abstract topics into clear,
+              approachable explanations.
             </li>
             <li>
-              Hosted study hall sessions to assist with homework and exam
-              preparation.
+              Facilitated discussions during lectures and study hall sessions,
+              adapting explanations based on student questions and real-time
+              feedback.
             </li>
             <li>
-              Tested exam papers for difficulty and accuracy, supervised exams,
-              and ensured complete submissions.
+              Tested exams for clarity and appropriate difficulty levels, making
+              sure questions were fair and understandable for all students.
             </li>
             <li>
-              Encouraged students to grasp underlying concepts and shared
-              personal learning strategies.
+              Led review sessions before exams, guiding students to build
+              structured ways of thinking instead of relying on memorization.
             </li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="project-container">
-        <!-- Project Card 1 -->
-        <div class="project-card">
-          <img
-            src="./assets/icons/airport.svg"
-            alt="Airport logo"
-            class="project-icon"
-          />
-          <h3>Airport Database</h3>
-          <p>
-            A Python-based GUI project for interacting with a SQLite database,
-            allowing users to query and update airport data.
-          </p>
-          <a
-            href="https://github.com/AiiiiDannn/Airport-Base"
-            target="_blank"
-            class="github-link"
-          >
-            <img src="./assets/icons/github.svg" alt="GitHub Icon" />
-          </a>
-        </div>
-
-        <!-- Project Card 2 -->
-        <div class="project-card">
-          <img
-            src="./assets/icons/music.svg"
-            alt="Music logo"
-            class="project-icon"
-          />
-          <h3>Music Library</h3>
-          <p>
-            A Java-based User Interface that can store and fetch music
-            information.
-          </p>
-          <a
-            href="https://github.com/AiiiiDannn/Music-Frame"
-            target="_blank"
-            class="github-link"
-          >
-            <img src="./assets/icons/github.svg" alt="GitHub Icon" />
-          </a>
-        </div>
-
-        <!--Project 3 (MIP)-->
-        <div class="project-card">
-          <img
-            src="./assets/icons/question-mark.svg"
-            alt="Question mark"
-            class="project-icon"
-          />
-          <h3>More In Progress</h3>
-          <p>I hope more projects can be added here</p>
-          <a
-            href="https://github.com/AiiiiDannn"
-            target="_blank"
-            class="github-link"
-          >
-            <img src="./assets/icons/github.svg" alt="GitHub Icon" />
-          </a>
         </div>
       </div>
     </section>
@@ -316,49 +331,72 @@ EMAIL: xhai2@uci.edu
     <!-- Contact Section -->
     <section id="contact" class="section">
       <h2>Contact</h2>
-      <form class="contact-form">
-        <div class="form-group">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            placeholder="Name"
-          />
-        </div>
 
-        <div class="form-group">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            placeholder="Email"
-          />
-        </div>
+      <!-- Contact Form -->
+      <form
+        class="contact-form"
+        id="contactForm"
+        action="https://formsubmit.co/xhai2@uci.edu"
+        method="POST"
+      >
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email Address"
+          required
+        />
+        <input
+          type="text"
+          name="subject"
+          id="subjectInput"
+          placeholder="Subject"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Message"
+          rows="4"
+          required
+        ></textarea>
 
-        <div class="form-group">
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            required
-            placeholder="Subject"
-          />
-        </div>
+        <!-- Will override subject shown in email -->
+        <input type="hidden" name="_subject" id="realSubject" />
 
-        <div class="form-group">
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            required
-            placeholder="Message"
-          ></textarea>
-        </div>
+        <!-- Disable CAPTCHA & skip FormSubmit redirect -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://aiiiidannn.github.io/"
+        />
 
         <button type="submit">Send</button>
       </form>
+
+      <!-- Modal -->
+      <div id="thankYouModal" class="modal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+          <p>Thank you for your message! 😊</p>
+          <button id="closeModal">Close</button>
+        </div>
+      </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="footer-links">
+      <p>© 2025 Aiden Hai · Let’s connect!</p>
+      <div class="social-icons">
+        <a href="https://github.com/AiiiiDannn" target="_blank">
+          <img src="./assets/icons/linking_icons/github.svg" alt="GitHub" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/aiden-hai-0b01282a9/"
+          target="_blank"
+        >
+          <img src="./assets/icons/linking_icons/linkedin.svg" alt="LinkedIn" />
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

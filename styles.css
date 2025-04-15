@@ -48,6 +48,11 @@ html {
   color: #333;
 }
 
+.logo a:hover {
+  color: purple;
+  transition: color 0.3s ease;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -60,20 +65,38 @@ html {
 .nav-links li a {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
-  padding: 12px 18px; /* Larger padding for button-like appearance */
+  font-weight: 400;
+  padding: 18px 18px; /* Larger padding for button-like appearance */
   border-radius: 5px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: inline-block;
   font-size: 1.1em;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.nav-links li a:hover {
-  background-color: grey;
-  color: white;
-  font-size: 1.2em;
-  transition: background 0.3s;
+/* .nav-links li a:hover {
+  font-weight: 600;
+} */
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 15%;
+  width: 70%;
+  height: 2px;
+  background-color: purple;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s ease;
+  border-radius: 2px;
+}
+
+.nav-links li a:hover::after {
+  transform: scaleX(1);
 }
 
 /* Main Content */
@@ -112,9 +135,9 @@ html {
 }
 
 .profile p span {
+  color: purple;
   font-style: italic;
   font-weight: bold;
-  color: purple;
   font-size: 1.2em;
 }
 
@@ -193,24 +216,31 @@ button:hover {
   line-height: 1;
 }
 
-/* Style for Social Media Icons */
-.soc-med {
-  display: flex;
-  gap: 30px;
-  margin-top: 30px;
-  justify-content: center;
+.about-text a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.soc-med img {
-  width: 40px;
-  height: 40px;
+.about-text a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  width: 70%;
+  height: 2px;
+  background-color: purple;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s ease;
+  border-radius: 2px;
   cursor: pointer;
-  transition: transform 0.3s;
 }
 
-.soc-med img:hover {
-  transform: scale(1.2);
-  transition: transform 0.3s;
+.about-text a:hover::after {
+  transform: scaleX(1.45);
 }
 
 /* Skills Division */
@@ -220,10 +250,11 @@ button:hover {
 }
 
 .skills h3 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   text-align: center;
   margin-bottom: 15px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.05em;
 }
 
 .skills-list {
@@ -258,6 +289,115 @@ button:hover {
   margin: 20px 40px;
 }
 
+.skills h4.skills-group-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 20px 0 5px 20px;
+  letter-spacing: 0.03em;
+}
+
+.skills-list.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+}
+
+/*********************************************/
+/* ========== Updated Project Cards ========== */
+.project-card-new {
+  background-color: #f6f9fb;
+  border-radius: 30px;
+  padding: 24px 28px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.3s;
+  border: 1px solid transparent;
+}
+
+.project-card-new:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  border: 1px solid #c4e3e5;
+}
+
+.project-info h3 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #222;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.project-info p {
+  color: #555;
+  margin: 12px 0;
+  font-size: 1em;
+  line-height: 1.7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.project-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.project-tags span {
+  background-color: #d7f0f1;
+  color: #333;
+  font-size: 0.9em;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.project-link {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #007b83;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.project-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+  width: 70%;
+  height: 2px;
+  background-color: #007b83;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s ease;
+  border-radius: 2px;
+}
+
+.project-link:hover {
+  color: #005f66;
+}
+
+.project-link:hover::after {
+  transform: scaleX(1.45);
+}
+
 /*********************************************/
 /* Experience Section */
 .experience-container {
@@ -267,7 +407,8 @@ button:hover {
 .experience {
   margin-bottom: 40px;
   padding-left: 15px;
-  border-left: 3px solid #f596aa; /* Left border for separation */
+  border-left: 3px solid purple; /* Left border for separation, prior color: #f596aa*/
+  margin-top: 50px;
 }
 
 .experience h3 {
@@ -290,10 +431,12 @@ button:hover {
 
 .experience-dates {
   display: block;
-  font-size: 0.9em;
   color: #888;
   margin-bottom: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+  font-style: italic;
+  font-size: 1em;
 }
 
 .experience ul {
@@ -306,51 +449,6 @@ button:hover {
   line-height: 1.5;
   color: #444;
   font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-/*********************************************/
-/* Projects Section */
-.project-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  max-height: 600px;
-  overflow-y: auto;
-}
-
-.project-card {
-  width: 400px;
-  height: auto;
-  padding: 20px;
-  background-color: #d7f0f1;
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  text-align: left;
-}
-
-.project-icon {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-.project-card h3 {
-  font-size: 1.2em;
-  color: #333;
-  margin: 10px 0;
-}
-
-.project-card p {
-  color: #666;
-  font-size: 0.9em;
-  margin-bottom: 15px;
-}
-
-.github-link img {
-  width: 30px;
-  height: 30px;
 }
 
 /*********************************************/
@@ -396,6 +494,61 @@ button:hover {
   color: #888;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: purple;
+  box-shadow: 0 0 5px rgba(128, 0, 128, 0.3);
+}
+
+/* ===== Modal Style ===== */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 30px 40px;
+  border: 1px solid #888;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 15px;
+  font-family: "Varela Round", sans-serif;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.modal-content p {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#closeModal {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#closeModal:hover {
+  background-color: purple;
+}
+
 /* Submit Button be different from the buttons above */
 button[type="submit"] {
   background-color: #333;
@@ -415,4 +568,34 @@ button[type="submit"] {
 button[type="submit"]:hover {
   transform: scale(1.05) translateY(2px);
   transition: transform 0.3s;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 40px 0;
+  background-color: #fcfaf2;
+  color: #888;
+  font-family: "Varela Round", sans-serif;
+  font-size: 0.9em;
+}
+
+.footer-links .social-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-links img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.footer-links img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  cursor: pointer;
 }

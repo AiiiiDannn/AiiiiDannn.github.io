@@ -1,0 +1,111 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fcfaf2;
+  margin: 0;
+  padding: 40px;
+  color: #333;
+}
+
+.section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.section h2 {
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* About Text */
+.about-text-wide {
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+.about-text-wide span {
+  font-weight: bold;
+  color: purple;
+  font-size: 1.1em;
+  display: block;
+  margin-top: 15px;
+}
+
+/* Skills Grid */
+.skills-centered {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+}
+
+.skills h3 {
+  font-size: 1.6em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.skills h4.skills-group-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin: 25px 0 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  gap: 10px;
+  min-width: 160px;
+}
+
+.skills-list img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Divider */
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  margin: 30px 0;
+}
+
+/* Social Icons */
+.soc-med-centered {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.soc-med-centered img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.soc-med-centered img:hover {
+  transform: scale(1.2);
+}
