@@ -1,8 +1,10 @@
-# Aiden Hai's Personal Portfolio / Aiden Hai 的个人网站
+# Aiden Hai's Personal Portfolio
+
+# Aiden Hai 的个人网站
 
 Welcome to my personal portfolio site! This is a web-based showcase of my work in **front-end development** and **UI/UX design**, built with HTML and CSS.
 
-欢迎来到我的个人作品集网站！这是一个展示我在**前端开发** 和 **UI/UX 设计**方面作品的网页项目，使用 HTML 和 CSS 构建。
+欢迎来到我的个人网站！这是一个展示我在**前端开发** 和 **UI/UX 设计**方面作品的网页项目，使用 HTML 和 CSS 构建。
 
 ---
 
@@ -22,12 +24,12 @@ I'm a student at **UC Irvine**, double majoring in **Informatics** and **Cogniti
 
 ## Features / 网站功能
 
-- **Animated Navigation Bar** 带动画效果的导航栏
-- **Smooth Scroll & Fade Effects** 页面滚动和淡入动效
-- **Project Highlights** 展示多个真实项目（含 GitHub / Figma 链接）
-- **Experience Timeline** 展示个人经历，内容已针对 UI/UX 优化
-- **Contact Form** 简洁的联系表单，便于直接发送消息
-- **Responsive Design** 适配桌面与移动设备
+- **Animated Navigation Bar** / 带动画效果的导航栏
+- **Smooth Scroll & Fade Effects** / 页面滚动和淡入动效
+- **Project Highlights** / 展示多个真实项目（含 GitHub / Figma 链接）
+- **Experience Timeline** / 展示个人经历，内容已针对 UI/UX 优化
+- **Contact Form** / 简洁的联系表单，便于直接发送消息
+- **Responsive Design** / 适配桌面与移动设备
 
 ---
 

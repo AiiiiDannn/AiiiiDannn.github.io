@@ -7,105 +7,143 @@ body {
 }
 
 .section {
-  max-width: 1000px;
+  max-width: 800px;
   margin: auto;
   padding: 20px;
 }
 
 .section h2 {
-  font-size: 2.2em;
+  font-size: 2em;
   text-align: center;
   margin-bottom: 40px;
   color: #333;
 }
 
-/* About Text */
-.about-text-wide {
-  max-width: 750px;
-  margin: 0 auto 40px auto;
-  font-size: 1.1em;
+.project-card-new {
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+  padding: 24px 28px;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.3s;
+}
+
+.project-card-new:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* Shared content structure */
+.project-info h3 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #222;
+}
+
+.project-info p {
   color: #555;
-  line-height: 1.8;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  text-align: justify;
-}
-
-.about-text-wide span {
-  font-weight: bold;
-  color: purple;
-  font-size: 1.1em;
-  display: block;
-  margin-top: 15px;
-}
-
-/* Skills Grid */
-.skills-centered {
-  max-width: 900px;
-  margin: 0 auto 40px auto;
-}
-
-.skills h3 {
-  font-size: 1.6em;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.skills h4.skills-group-title {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #333;
-  margin: 25px 0 10px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", sans-serif;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
-}
-
-.skills-list {
-  list-style: none;
-  padding: 0;
-  margin: 15px 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.skills-list li {
-  display: flex;
-  align-items: center;
+  margin: 12px 0;
   font-size: 1em;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  gap: 10px;
-  min-width: 160px;
+  line-height: 1.7;
 }
 
-.skills-list img {
-  width: 24px;
-  height: 24px;
-}
-
-/* Divider */
-.divider {
-  width: 100%;
-  height: 1px;
-  background-color: #ccc;
-  margin: 30px 0;
-}
-
-/* Social Icons */
-.soc-med-centered {
+.project-meta {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
-.soc-med-centered img {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  transition: transform 0.3s;
+.project-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
-.soc-med-centered img:hover {
-  transform: scale(1.2);
+.project-tags span {
+  font-size: 0.85em;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.project-link {
+  font-size: 0.9em;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* 🌿 Style A - Blue-Green Calm */
+.card-a {
+  background-color: #f6f9fb;
+  border: 1px solid transparent;
+}
+
+.card-a:hover {
+  border: 1px solid #c4e3e5;
+}
+
+.card-a .project-tags span {
+  background-color: #d7f0f1;
+  color: #333;
+}
+
+.card-a .project-link {
+  color: #007b83;
+}
+
+.card-a .project-link:hover {
+  color: #005f66;
+}
+
+/* 🍂 Style B - Warm Sand Tone */
+.card-b {
+  background-color: #f9f5ef;
+  border: 1px solid transparent;
+}
+
+.card-b:hover {
+  border: 1px solid #e4d5c3;
+}
+
+.card-b .project-tags span {
+  background-color: #f1e8d9;
+  color: #4a3f35;
+}
+
+.card-b .project-link {
+  color: #8b5e3c;
+}
+
+.card-b .project-link:hover {
+  color: #6e4224;
+}
+
+/* 🌸 Style C - Soft Rose Gray */
+.card-c {
+  background-color: #fefafb;
+  border: 1px solid transparent;
+}
+
+.card-c:hover {
+  border: 1px solid #f8cddd;
+}
+
+.card-c .project-tags span {
+  background-color: #fceef3;
+  color: #713a4a;
+}
+
+.card-c .project-link {
+  color: #cc4b76;
+}
+
+.card-c .project-link:hover {
+  color: #a8325c;
 }

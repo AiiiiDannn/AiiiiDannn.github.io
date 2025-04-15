@@ -599,3 +599,14 @@ button[type="submit"]:hover {
   transition: transform 0.3s;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .footer-links .social-icons {
+    gap: 20px;
+  }
+
+  .footer-links p {
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
