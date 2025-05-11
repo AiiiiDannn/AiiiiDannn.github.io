@@ -376,26 +376,17 @@ EMAIL: xhai2@uci.edu
         action="https://formsubmit.co/xhai2@uci.edu"
         method="POST"
       >
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email Address"
-          required
-        />
-        <input
-          type="text"
-          name="subject"
-          id="subjectInput"
-          placeholder="Subject"
-          required
-        />
-        <textarea
-          name="message"
-          placeholder="Message"
-          rows="4"
-          required
-        ></textarea>
+        <label for="name">Name</label>
+        <input type="text" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" name="email" required />
+
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subjectInput" required />
+
+        <label for="message">Message</label>
+        <textarea name="message" rows="4" required></textarea>
 
         <!-- Will override subject shown in email -->
         <input type="hidden" name="_subject" id="realSubject" />
@@ -422,7 +413,7 @@ EMAIL: xhai2@uci.edu
 
     <!-- Footer -->
     <footer class="footer-links">
-      <p>© 2025 Aiden Hai · Let’s connect!</p>
+      <p>© 2025 Aiden Hai · Let's connect!</p>
       <div class="social-icons">
         <a href="https://github.com/AiiiiDannn" target="_blank">
           <img src="./assets/icons/linking_icons/github.svg" alt="GitHub" />
