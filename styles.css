@@ -176,7 +176,8 @@ button:hover {
   font-size: 1.1em;
   color: #555;
   margin-bottom: 20px;
-  text-align: justify;
+  text-align: left;
+  /* text-align: justify; */
 }
 
 /*********************************************/
@@ -431,7 +432,7 @@ button:hover {
 
 .experience-dates {
   display: block;
-  color: #888;
+  color: purple;
   margin-bottom: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.5;
