@@ -37,7 +37,7 @@ I'm a student at **UC Irvine**, double majoring in **Informatics** and **Cogniti
 - **CSS3**
 - **JavaScript**
 - **Figma**（UI Prototyping / UI 设计）
-- etc.
+- etc. I can always do something beyond what I listed here!
 
 ---
 
