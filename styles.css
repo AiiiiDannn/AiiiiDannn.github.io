@@ -314,13 +314,13 @@ button:hover {
   margin-bottom: 30px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.3s;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 .project-card-new:hover {
-  transform: translateY(-5px) scale(1.02);
+  transform: translateY(-1px) scale(1.005);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
-  border: 1px solid #c4e3e5;
+  border: 1.5px solid violet;
 }
 
 .project-info h3 {
@@ -339,13 +339,14 @@ button:hover {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 0.01em;
 }
-
 .project-meta {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* 两端对齐，标签在左，链接在右 */
   align-items: center;
   flex-wrap: wrap;
   margin-top: 10px;
+  width: 100%;
+  gap: 0; /* 避免标签和链接之间出现多余间距 */
 }
 
 .project-tags {
@@ -354,16 +355,11 @@ button:hover {
   flex-wrap: wrap;
 }
 
-.project-tags span {
-  background-color: #d7f0f1;
-  color: #333;
-  font-size: 0.9em;
-  font-weight: 500;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-family: "Courier New", Courier, monospace;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+.project-links {
+  display: flex;
+  gap: 1.2rem; /* a 之间的距离一致 */
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .project-link {
@@ -397,6 +393,18 @@ button:hover {
 
 .project-link:hover::after {
   transform: scaleX(1.45);
+}
+
+@media (max-width: 700px) {
+  .project-meta {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem 0;
+  }
+  .project-links {
+    justify-content: flex-start;
+    margin-top: 0.3rem;
+  }
 }
 
 /*********************************************/

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Cards Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* 直接嵌入CSS见下方 */
+    </style>
+  </head>
+  <body style="background: #fcfaf2">
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <!-- Project 1 -->
+        <div class="project-card-new">
+          <div class="project-info">
+            <h3>UCI TreeHole</h3>
+            <p>
+              A web-based anonymous discussion platform for UCI students to
+              share emotions, thoughts, and experiences without revealing their
+              identities. I contributed across the full UX design cycle—from
+              <strong>user research and ideation</strong> to
+              <strong>wireframing, prototyping</strong>, and now
+              <strong>usability evaluation</strong>. The project emphasizes
+              emotional safety, anonymity, and a clean yet expressive interface.
+            </p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span>Figma</span>
+                <span>UX Research</span>
+                <span>React.js</span>
+                <span>Usability Testing</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="project-link"
+                  >View Prototype</a
+                >
+                <a href="#" target="_blank" class="project-link">GitHub Repo</a>
+                <a href="#" target="_blank" class="project-link">Live Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card-new">
+          <div class="project-info">
+            <h3>Career Support App</h3>
+            <p>
+              A UX-focused platform enabling students to share anonymous
+              job-seeking experiences and get peer-based resume feedback.
+              Developed with user interviews, affinity mapping, and
+              high-fidelity prototyping in Figma.
+            </p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span>Figma</span>
+                <span>User Research</span>
+                <span>Usability Testing</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="project-link"
+                  >View Portfolio</a
+                >
+                <a href="#" target="_blank" class="project-link"
+                  >View Prototype</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card-new">
+          <div class="project-info">
+            <h3>Kidz Docs (Document Editor for Kids)</h3>
+            <p>
+              A collaborative document editor designed for K-6 students. Focused
+              on accessibility, real-time group writing, and offline editing,
+              Kidz Docs streamlines the Google Docs experience for kids with
+              guided editing, safe image search, and teacher feedback. I
+              contributed to the end-to-end UX design, prototyping, and process
+              documentation.
+            </p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span>UX Design</span>
+                <span>Figma</span>
+                <span>Accessibility</span>
+                <span>Prototyping</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="project-link"
+                  >View Prototype</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card-new">
+          <div class="project-info">
+            <h3>Travel Assistant Web App</h3>
+            <p>
+              Built a responsive itinerary planner with weather integration via
+              Tomorrow.io API. Features include category filters, modal-based
+              trip editing, and localStorage data persistence.
+            </p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>HTML/CSS</span>
+                <span>API Integration</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="project-link">GitHub Repo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card-new">
+          <div class="project-info">
+            <h3>Discord UX Enhancement</h3>
+            <p>
+              Designed a user rating system to increase trustworthiness in
+              academic Discord communities. Created personas and prototypes in
+              Figma, simulating real-time interaction and usability within
+              existing UI.
+            </p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span>Figma</span>
+                <span>UX Design</span>
+                <span>Discord</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" class="project-link"
+                  >View Prototype</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CSS见下方 -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #fcfaf2;
+      }
+      .section {
+        padding: 50px 20px;
+        max-width: 1000px;
+        margin: auto;
+      }
+      h2 {
+        font-size: 2em;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+      .project-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      /* 卡片基础 */
+      .project-card-new {
+        background-color: #f6f9fb;
+        border-radius: 30px;
+        padding: 24px 28px;
+        margin-bottom: 0px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.3s;
+        border: 1px solid transparent;
+      }
+      .project-card-new:hover {
+        transform: translateY(-1px) scale(1.005);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+        border: 1px solid #c4e3e5;
+      }
+
+      .project-info h3 {
+        margin: 0;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #222;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .project-info p {
+        color: #555;
+        margin: 12px 0;
+        font-size: 1em;
+        line-height: 1.7;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 0.01em;
+      }
+
+      /* 重点：meta左右两组 */
+      .project-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        width: 100%;
+        gap: 0;
+      }
+
+      .project-tags {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      .project-tags span {
+        background-color: #d7f0f1;
+        color: #333;
+        font-size: 0.9em;
+        font-weight: 500;
+        padding: 6px 12px;
+        border-radius: 8px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      /* 右侧所有链接一组，间距一致，右对齐 */
+      .project-links {
+        display: flex;
+        gap: 1.2rem;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .project-link {
+        font-size: 0.9em;
+        font-weight: 600;
+        color: #007b83;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        transition: color 0.3s ease;
+      }
+      .project-link::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        width: 70%;
+        height: 2px;
+        background-color: #007b83;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform 0.5s ease;
+        border-radius: 2px;
+      }
+      .project-link:hover {
+        color: #005f66;
+      }
+      .project-link:hover::after {
+        transform: scaleX(1.45);
+      }
+
+      /* 响应式支持（可选） */
+      @media (max-width: 700px) {
+        .project-meta {
+          flex-direction: column;
+          align-items: stretch;
+          gap: 0.5rem 0;
+        }
+        .project-links {
+          justify-content: flex-start;
+          margin-top: 0.3rem;
+        }
+      }
+    </style>
+  </body>
+</html>
