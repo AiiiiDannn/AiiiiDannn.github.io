@@ -355,6 +355,18 @@ button:hover {
   flex-wrap: wrap;
 }
 
+.project-tags span {
+  background-color: #a5dee4;
+  opacity: 0.8;
+  color: #222;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 .project-links {
   display: flex;
   gap: 1.2rem; /* a 之间的距离一致 */
