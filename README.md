@@ -43,7 +43,7 @@ I'm a student at **UC Irvine**, double majoring in **Informatics** and **Cogniti
 
 ## Contact / 联系方式
 
-- Email: xhai2@uci.edu / haiaiden010@gmail.com
+- Email: xhai2 [at] uci [dot] edu / aiiiidannn [at] gmail [dot] com
 - [LinkedIn](https://www.linkedin.com/in/aiden-hai-0b01282a9/)
 - [GitHub](https://github.com/AiiiiDannn)
 

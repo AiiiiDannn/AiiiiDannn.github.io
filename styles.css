@@ -13,13 +13,17 @@ body {
 }
 
 .section {
-  padding: 50px 20px;
+  padding: clamp(32px, 6vw, 50px) clamp(16px, 4vw, 20px);
   max-width: 1000px;
   margin: auto;
 }
 
 html {
   scroll-behavior: smooth;
+  /* Fluid base size: everything below is defined in rem/em, so this
+     single value scales the whole site's type proportionally instead
+     of needing a font-size override on every element per breakpoint. */
+  font-size: clamp(15px, 1.6vw + 11px, 16px);
 }
 
 /* Navigation Bar */
@@ -38,7 +42,7 @@ html {
 }
 
 .logo {
-  font-size: 24px;
+  font-size: clamp(1.15rem, 2vw + 0.8rem, 1.5rem);
   font-weight: bold;
   color: #333;
   text-transform: uppercase;
@@ -61,7 +65,7 @@ html {
   gap: 10px;
   margin-left: auto;
   white-space: nowrap;
-  font-size: 1.1em;
+  font-size: clamp(0.95rem, 1vw + 0.7rem, 1.1rem);
 }
 
 .nav-links li a {
@@ -73,7 +77,7 @@ html {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: inline-block;
-  font-size: 1.1em;
+  font-size: 1em;
   cursor: pointer;
   position: relative;
   transition: color 0.3s ease;
@@ -101,6 +105,43 @@ html {
   transform: scaleX(1);
 }
 
+/* Hamburger Toggle Button (hidden on desktop) */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #333;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 /* Main Content */
 .main-content {
   display: flex;
@@ -113,15 +154,15 @@ html {
 }
 
 .profile-pic {
-  width: 200px;
-  height: 200px;
+  width: clamp(120px, 28vw, 200px);
+  height: clamp(120px, 28vw, 200px);
   border-radius: 50%;
   margin-bottom: 20px;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .profile h1 {
-  font-size: 2.5em;
+  font-size: clamp(1.7rem, 5vw + 0.7rem, 2.5rem);
   /* font-family: "Roboto Mono", monospace; */
   font-family: "Lugrasimo", cursive;
   font-optical-sizing: auto;
@@ -131,26 +172,27 @@ html {
 }
 
 .profile p {
-  font-size: 1.1em;
+  font-size: clamp(0.95rem, 1vw + 0.75rem, 1.1rem);
   color: #555;
   font-family: "Varela Round", sans-serif;
   color: #555;
-  margin: 15px 0;
+  line-height: 1.8;
+  margin: 15px auto;
 }
 
 .profile p span {
   color: purple;
   /* font-style: italic; */
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 button {
   border: none;
   border-radius: 15px;
   margin: 20px;
-  width: 125px;
-  height: 50px;
-  font-size: 20px;
+  width: clamp(110px, 26vw, 125px);
+  height: clamp(44px, 10vw, 50px);
+  font-size: clamp(1rem, 1vw + 0.8rem, 1.25rem);
   font-weight: bold;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
   transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
@@ -166,17 +208,17 @@ button:hover {
 .section h2 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 2em;
+  font-size: clamp(1.4rem, 3vw + 0.9rem, 2rem);
   font-weight: bold;
   color: #333;
   text-align: center;
   margin-bottom: 20px;
-  margin: 50px 0;
+  margin: clamp(30px, 5vw, 50px) 0;
 }
 
 .section p {
   font-family: "Varela Round", sans-serif;
-  font-size: 1.1em;
+  font-size: clamp(0.95rem, 0.8vw + 0.8rem, 1.1rem);
   color: #555;
   margin-bottom: 20px;
   text-align: left;
@@ -198,9 +240,9 @@ button:hover {
 }
 
 .about-text p {
-  font-size: 1.2em;
+  font-size: clamp(1rem, 0.8vw + 0.85rem, 1.2rem);
   color: #555;
-  line-height: 1.9;
+  line-height: 1.8;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 20px;
 }
@@ -212,7 +254,7 @@ button:hover {
 }
 
 .about-text p::first-letter {
-  font-size: 3.5em;
+  font-size: 3em;
   font-weight: bold;
   color: #333;
   float: left;
@@ -254,7 +296,7 @@ button:hover {
 }
 
 .skills h3 {
-  font-size: 1.4em;
+  font-size: clamp(1.15rem, 1.5vw + 0.9rem, 1.4rem);
   text-align: center;
   margin-bottom: 15px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -274,16 +316,17 @@ button:hover {
 .skills-list li {
   display: flex;
   align-items: center;
-  font-size: 1.1em;
+  font-size: clamp(0.9rem, 0.8vw + 0.75rem, 1.1rem);
   margin-bottom: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
   margin: 10;
 }
 
 .skills-list img {
-  width: 24px;
-  height: 24px;
+  width: clamp(18px, 4vw, 24px);
+  height: clamp(18px, 4vw, 24px);
   margin-right: 10px;
+  flex-shrink: 0;
 }
 
 .divider {
@@ -294,7 +337,7 @@ button:hover {
 }
 
 .skills h4.skills-group-title {
-  font-size: 1.1em;
+  font-size: clamp(0.95rem, 0.8vw + 0.8rem, 1.1rem);
   font-weight: bold;
   color: #333;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -312,8 +355,8 @@ button:hover {
 /* ========== Updated Project Cards ========== */
 .project-card-new {
   background-color: #f6f9fb;
-  border-radius: 30px;
-  padding: 24px 28px;
+  border-radius: clamp(18px, 3vw, 30px);
+  padding: clamp(16px, 3.5vw, 24px) clamp(16px, 4vw, 28px);
   margin-bottom: 30px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.3s;
@@ -328,7 +371,7 @@ button:hover {
 
 .project-info h3 {
   margin: 0;
-  font-size: 1.5em;
+  font-size: clamp(1.15rem, 1.5vw + 0.9rem, 1.5rem);
   font-weight: bold;
   color: #222;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -337,7 +380,7 @@ button:hover {
 .project-info p {
   color: #555;
   margin: 12px 0;
-  font-size: 1em;
+  font-size: clamp(0.9rem, 0.5vw + 0.8rem, 1rem);
   line-height: 1.7;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   letter-spacing: 0.01em;
@@ -364,7 +407,7 @@ button:hover {
   color: #222;
   padding: 6px 12px;
   border-radius: 12px;
-  font-size: 0.9em;
+  font-size: clamp(0.78rem, 0.4vw + 0.68rem, 0.9rem);
   font-weight: bold;
   font-family: "Courier New", Courier, monospace;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -378,7 +421,7 @@ button:hover {
 }
 
 .project-link {
-  font-size: 0.9em;
+  font-size: clamp(0.82rem, 0.4vw + 0.72rem, 0.9rem);
   font-weight: 600;
   color: #007b83;
   text-decoration: none;
@@ -436,7 +479,7 @@ button:hover {
 }
 
 .experience h3 {
-  font-size: 1.6em;
+  font-size: clamp(1.2rem, 1.5vw + 0.95rem, 1.6rem);
   font-weight: bold;
   color: #333;
   margin: 0;
@@ -449,8 +492,14 @@ button:hover {
   font-style: italic;
   font-weight: bold;
   color: #555;
-  font-size: 1em;
+  font-size: clamp(0.9rem, 0.4vw + 0.8rem, 1rem);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.experience-organization.second-course {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px dashed #ccc;
 }
 
 .experience-dates {
@@ -460,7 +509,7 @@ button:hover {
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 1.5;
   font-style: italic;
-  font-size: 1em;
+  font-size: clamp(0.9rem, 0.4vw + 0.8rem, 1rem);
 }
 
 .experience ul {
@@ -472,7 +521,20 @@ button:hover {
   margin-bottom: 8px;
   line-height: 1.5;
   color: #444;
+  font-size: clamp(0.92rem, 0.4vw + 0.8rem, 1rem);
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.experience li a {
+  color: purple;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.experience li a:hover {
+  border-bottom-color: purple;
 }
 
 /*********************************************/
@@ -498,7 +560,7 @@ button:hover {
 }
 
 label {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 0.4vw + 0.8rem, 1rem);
   color: #444;
   margin-top: 15px;
   margin-left: 10px;
@@ -512,7 +574,9 @@ label {
   padding: 12px 16px;
   border: 1.5px solid #ccc;
   border-radius: 25px;
-  font-size: 1rem;
+  /* Fixed (not fluid) at 16px: iOS Safari auto-zooms on focus for any
+     input below 16px, which we don't want triggered on small screens. */
+  font-size: 16px;
   color: #333;
   background-color: #fcfaf2;
   font-family: inherit;
@@ -585,7 +649,7 @@ label {
 }
 
 .modal-content p {
-  font-size: 1.2em;
+  font-size: clamp(1.05rem, 1vw + 0.85rem, 1.2rem);
   color: #333;
   margin-bottom: 20px;
 }
@@ -596,7 +660,7 @@ label {
   border: none;
   padding: 10px 25px;
   border-radius: 25px;
-  font-size: 1em;
+  font-size: clamp(0.95rem, 0.5vw + 0.8rem, 1rem);
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -632,7 +696,7 @@ button[type="submit"] {
   max-width: 200px;
   margin: 0 auto;
   padding: 14px;
-  font-size: 1.2rem;
+  font-size: clamp(1.05rem, 1vw + 0.85rem, 1.2rem);
   font-weight: bold;
   background: linear-gradient(135deg, purple, #482d83);
   color: white;
@@ -658,7 +722,7 @@ button[type="submit"]:hover {
   background-color: #fcfaf2;
   color: purple;
   font-family: "Varela Round", sans-serif;
-  font-size: 0.9em;
+  font-size: clamp(0.8rem, 0.4vw + 0.7rem, 0.9rem);
 }
 
 .footer-links .social-icons {
@@ -667,8 +731,8 @@ button[type="submit"]:hover {
 }
 
 .footer-links img {
-  width: 40px;
-  height: 40px;
+  width: clamp(30px, 6vw, 40px);
+  height: clamp(30px, 6vw, 40px);
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -685,7 +749,143 @@ button[type="submit"]:hover {
   }
 
   .footer-links p {
-    font-size: 0.8em;
     text-align: center;
+  }
+}
+
+/*********************************************/
+/* ================ RESPONSIVE ================ */
+
+/* Tablet and below */
+@media screen and (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-text,
+  .skills {
+    max-width: 100%;
+  }
+
+  .skills {
+    width: 100%;
+  }
+}
+
+/* Mobile nav (tablet/phone) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 12px 15px;
+  }
+
+  .logo {
+    margin-left: 5px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 0;
+    background-color: #fcfaf2;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .nav-links.open {
+    max-height: 400px;
+    opacity: 1;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 16px 18px;
+  }
+}
+
+/* General mobile adjustments (layout/spacing only — type sizes are
+   fluid via clamp() on the elements themselves, see above) */
+@media screen and (max-width: 600px) {
+  .main-content {
+    height: auto;
+    min-height: 100svh;
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .profile p {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .about-text p {
+    line-height: 1.7;
+  }
+
+  .skills-list.grid-2col {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .skills-list {
+    margin: 10px 0;
+  }
+
+  .skills h4.skills-group-title {
+    margin-left: 0;
+  }
+
+  .divider {
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .experience {
+    padding-left: 12px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .section#contact {
+    padding-bottom: 120px;
+  }
+
+  .modal-content {
+    margin: 30% auto;
+    padding: 24px 20px;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 380px) {
+  .project-tags span {
+    padding: 5px 10px;
   }
 }

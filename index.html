@@ -26,7 +26,18 @@ EMAIL: xhai2@uci.edu
       <div class="logo">
         <a href="#home">AH</a>
       </div>
-      <ul class="nav-links">
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#experience">Experiences</a></li>
@@ -38,7 +49,7 @@ EMAIL: xhai2@uci.edu
     <section id="home" class="section main-content">
       <div class="profile">
         <img
-          src="./assets/aiden_photo.png"
+          src="./assets/Website Avatar.png"
           alt="Aiden Hai's Avatar Profile Image"
           class="profile-pic"
         />
@@ -52,7 +63,7 @@ EMAIL: xhai2@uci.edu
           <span>User Experience</span>.
         </p>
         <a
-          href="./assets/Aiden_Resume.pdf"
+          href="./assets/Aiden_Resume_beta.pdf"
           target="_blank"
           rel="noopener noreferrer"
           class="button-link"
@@ -164,6 +175,7 @@ EMAIL: xhai2@uci.edu
               Fine-Tune
             </li>
           </ul>
+          <div class="divider"></div>
 
           <!-- Software, Systems & Tools -->
           <h4 class="skills-group-title">Software, Systems & Tools</h4>
@@ -187,10 +199,6 @@ EMAIL: xhai2@uci.edu
               <img src="./assets/icons/rest_api.svg" alt="REST API Icon" />
               RESTful
             </li>
-            <li>
-              <img src="./assets/icons/mongodb.svg" alt="MongoDB Icon" />
-              MongoDB
-            </li>
           </ul>
           <div class="divider"></div>
         </div>
@@ -201,6 +209,153 @@ EMAIL: xhai2@uci.edu
     <section id="projects" class="section">
       <h2>Projects</h2>
       <div class="project-container">
+        <!-- Project: Impact Studio -->
+        <div class="project-card-new">
+          <div class="project-info">
+            <h3>Impact Studio</h3>
+            <p>
+              An AI-powered script evaluation system that helps nonprofit studio
+              leads instantly gauge how well a script aligns with their mission,
+              without a full manual read-through. Under the hood, a fine-tuned
+              LLM handles mission-aligned scoring, a RAG pipeline grounds
+              community impact analysis in real context, and a multi-agent
+              orchestrator routes each request to the right specialist agent for
+              a fast, reliable response.
+            </p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span>Multi-Agent System</span>
+                <span>System Design</span>
+                <span>RAG</span>
+                <span>LLM Fine-Tuning</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://impactstudio-frontend.vercel.app/"
+                  target="_blank"
+                  class="project-link"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: UCI TreeHole -->
+        <div class="project-card-new">
+          <div class="project-info">
+            <h3>UCI TreeHole</h3>
+            <p>
+              A web-based anonymous discussion platform for UCI students to
+              share emotions, thoughts, and experiences without revealing their
+              identities. I contributed across the full UX design cycle, from
+              <strong>user research and ideation</strong> to
+              <strong>wireframing, prototyping</strong>, and now
+              <strong>usability evaluation</strong>. The project emphasizes
+              emotional safety, anonymity, and a clean yet expressive interface.
+            </p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span>Figma</span>
+                <span>UX Research</span>
+                <span>React.js</span>
+                <span>Usability Testing</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://www.figma.com/design/nhb79i0F7WYyZYS2XDD767/Mockup?node-id=18-202&t=2DANd25CWHIwHeKk-0"
+                  target="_blank"
+                  class="project-link"
+                  >View Prototype</a
+                >
+                <a
+                  href="https://github.com/AiiiiDannn/TreeHole-Forward-II-Deploy.git"
+                  target="_blank"
+                  class="project-link"
+                  >GitHub Repo</a
+                >
+                <a
+                  href="https://tree-hole-forward-ii.vercel.app/"
+                  target="_blank"
+                  class="project-link"
+                  >Live Demo</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Kidz Docs -->
+        <div class="project-card-new">
+          <div class="project-info">
+            <h3>Kidz Docs (Document Editor for Kids)</h3>
+            <p>
+              A collaborative document editor designed for K-6 students. Focused
+              on accessibility, real-time group writing, and offline editing,
+              Kidz Docs streamlines the Google Docs experience for kids with
+              guided editing, safe image search, and teacher feedback. I
+              contributed to the end-to-end UX design, prototyping, and process
+              documentation.
+            </p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span>UX Design</span>
+                <span>Figma</span>
+                <span>Accessibility</span>
+                <span>Prototyping</span>
+              </div>
+              <!-- <a
+                href="https://docs.google.com/document/d/1Qc_nm7IePj31C1lP81mmGoiwVPH0qXE9s2yUz1_wHR0/edit?usp=drive_link"
+                target="_blank"
+                class="project-link"
+                >Read Documentation</a
+              > -->
+              <div class="project-links">
+                <a
+                  href="https://www.figma.com/design/3yrCvGZs19tKcrrPXctuTc/Interaction-Design?node-id=51-151&p=f&t=ROnRcn9K9WSAkfkb-0"
+                  target="_blank"
+                  class="project-link"
+                  >View Prototype</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project: Career Support App -->
+        <div class="project-card-new">
+          <div class="project-info">
+            <h3>Career Support App</h3>
+            <p>
+              A UX-focused platform enabling students to share anonymous
+              job-seeking experiences and get peer-based resume feedback.
+              Developed with user interviews, affinity mapping, and
+              high-fidelity prototyping in Figma.
+            </p>
+            <div class="project-meta">
+              <div class="project-tags">
+                <span>Figma</span>
+                <span>User Research</span>
+                <span>Usability Testing</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://danisump.wixsite.com/collaborative-click"
+                  target="_blank"
+                  class="project-link"
+                  >View Portfolio</a
+                >
+                <a
+                  href="https://www.figma.com/design/RBkHIoovOTr16StoXZGsOq/High-Fidelity-Post-Feedback?node-id=0-1&p=f&t=dXuTrkqoNibo7JIU-0"
+                  target="_blank"
+                  class="project-link"
+                  >View Prototype</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- Project: Dragonfish (Cognitive Robot) -->
         <div class="project-card-new">
           <div class="project-info">
@@ -243,123 +398,7 @@ EMAIL: xhai2@uci.edu
           </div>
         </div>
 
-        <!-- Project 1 -->
-        <!-- Project: UCI TreeHole -->
-        <div class="project-card-new">
-          <div class="project-info">
-            <h3>UCI TreeHole</h3>
-            <p>
-              A web-based anonymous discussion platform for UCI students to
-              share emotions, thoughts, and experiences without revealing their
-              identities. I contributed across the full UX design cycle—from
-              <strong>user research and ideation</strong> to
-              <strong>wireframing, prototyping</strong>, and now
-              <strong>usability evaluation</strong>. The project emphasizes
-              emotional safety, anonymity, and a clean yet expressive interface.
-            </p>
-            <div class="project-meta">
-              <div class="project-tags">
-                <span>Figma</span>
-                <span>UX Research</span>
-                <span>React.js</span>
-                <span>Usability Testing</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://www.figma.com/design/nhb79i0F7WYyZYS2XDD767/Mockup?node-id=18-202&t=2DANd25CWHIwHeKk-0"
-                  target="_blank"
-                  class="project-link"
-                  >View Prototype</a
-                >
-                <a
-                  href="https://github.com/AiiiiDannn/TreeHole-Forward-II-Deploy.git"
-                  target="_blank"
-                  class="project-link"
-                  >GitHub Repo</a
-                >
-                <a
-                  href="https://tree-hole-forward-ii.vercel.app/"
-                  target="_blank"
-                  class="project-link"
-                  >Live Demo</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card-new">
-          <div class="project-info">
-            <h3>Career Support App</h3>
-            <p>
-              A UX-focused platform enabling students to share anonymous
-              job-seeking experiences and get peer-based resume feedback.
-              Developed with user interviews, affinity mapping, and
-              high-fidelity prototyping in Figma.
-            </p>
-            <div class="project-meta">
-              <div class="project-tags">
-                <span>Figma</span>
-                <span>User Research</span>
-                <span>Usability Testing</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://danisump.wixsite.com/collaborative-click"
-                  target="_blank"
-                  class="project-link"
-                  >View Portfolio</a
-                >
-                <a
-                  href="https://www.figma.com/design/RBkHIoovOTr16StoXZGsOq/High-Fidelity-Post-Feedback?node-id=0-1&p=f&t=dXuTrkqoNibo7JIU-0"
-                  target="_blank"
-                  class="project-link"
-                  >View Prototype</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 5 -->
-        <div class="project-card-new">
-          <div class="project-info">
-            <h3>Kidz Docs (Document Editor for Kids)</h3>
-            <p>
-              A collaborative document editor designed for K-6 students. Focused
-              on accessibility, real-time group writing, and offline editing,
-              Kidz Docs streamlines the Google Docs experience for kids with
-              guided editing, safe image search, and teacher feedback. I
-              contributed to the end-to-end UX design, prototyping, and process
-              documentation.
-            </p>
-            <div class="project-meta">
-              <div class="project-tags">
-                <span>UX Design</span>
-                <span>Figma</span>
-                <span>Accessibility</span>
-                <span>Prototyping</span>
-              </div>
-              <!-- <a
-                href="https://docs.google.com/document/d/1Qc_nm7IePj31C1lP81mmGoiwVPH0qXE9s2yUz1_wHR0/edit?usp=drive_link"
-                target="_blank"
-                class="project-link"
-                >Read Documentation</a
-              > -->
-              <div class="project-links">
-                <a
-                  href="https://www.figma.com/design/3yrCvGZs19tKcrrPXctuTc/Interaction-Design?node-id=51-151&p=f&t=ROnRcn9K9WSAkfkb-0"
-                  target="_blank"
-                  class="project-link"
-                  >View Prototype</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
+        <!-- Project: Travel Assistant Web App -->
         <div class="project-card-new">
           <div class="project-info">
             <h3>Travel Assistant Web App</h3>
@@ -386,7 +425,7 @@ EMAIL: xhai2@uci.edu
           </div>
         </div>
 
-        <!-- Project 4 -->
+        <!-- Project: Discord UX Enhancement -->
         <div class="project-card-new">
           <div class="project-info">
             <h3>Discord UX Enhancement</h3>
@@ -421,11 +460,71 @@ EMAIL: xhai2@uci.edu
       <h2>Experiences</h2>
 
       <div class="experience-container">
+        <!-- Technical Intern Role -->
+        <div class="experience">
+          <h3>Technical Intern (AI/ML Engineer)</h3>
+          <span class="experience-organization">Rosie &amp; Co Global</span>
+          <span class="experience-dates">03.2026 - 06.2026</span>
+          <ul>
+            <li>
+              Analyzed three user segments and identified core information
+              architecture conflicts on the
+              <a
+                href="https://www.rosiecoglobal.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >platform homepage</a
+              >. Executed a layered restructuring plan and iterated through
+              three front-end prototypes, each informed by stakeholder feedback.
+            </li>
+            <li>
+              Defined the AI assistant (Ciao AI) persona, conversation tone, and
+              persona-based prompt card strategy across different user types to
+              prepare for LLM integration.
+            </li>
+            <li>
+              Built an automated data pipeline for fine-tuning dataset
+              preparation, implemented LoRA-based LLM adaptation in Python, and
+              developed a RAG knowledge base with vector retrieval to support
+              context-aware, persona-specific AI responses.
+            </li>
+          </ul>
+        </div>
+
+        <!-- UI/UX Design Intern Role -->
+        <div class="experience">
+          <h3>UI/UX Design Intern</h3>
+          <span class="experience-organization">My Rental Spot</span>
+          <span class="experience-dates">07.2025 - 03.2026</span>
+          <ul>
+            <li>
+              Led the full design of the Business Search Page, starting from
+              early requirements and success metrics to high-fidelity prototypes
+              and production delivery. Worked closely with engineers to make
+              sure design and backend logic matched.
+            </li>
+            <li>
+              Ran iterative usability studies based on real task flows,
+              increasing completion rates and cutting average task time to under
+              30 seconds. Built a post-release reporting pipeline tracking
+              interaction, drop-off points, and accessibility performance across
+              versions.
+            </li>
+            <li>
+              Architected the full contractor &amp; PM payment workflow,
+              covering state transitions (draft to complete), fund logic
+              (escrow, release, refund), milestone validation, and dispute
+              handling. Translated backend system behavior into multi-role UX
+              with transparent status feedback and robust edge-case handling.
+            </li>
+          </ul>
+        </div>
+
         <!-- Research Assistant Role 2 -->
         <div class="experience">
           <h3>Research Assistant</h3>
           <span class="experience-organization">UC Irvine CARL</span>
-          <span class="experience-dates">09.2024 - Present</span>
+          <span class="experience-dates">09.2024 - 06.2026</span>
           <ul>
             <li>
               Developed a stereo vision system using CNNs and transfer learning
@@ -446,7 +545,7 @@ EMAIL: xhai2@uci.edu
         <div class="experience">
           <h3>Peer Academic Advisor</h3>
           <span class="experience-organization">School of Social Sciences</span>
-          <span class="experience-dates">04.2024 - Present</span>
+          <span class="experience-dates">04.2024 - 06.2026</span>
           <ul>
             <li>
               Advised UCI students on course selection, degree progress checks,
@@ -499,22 +598,40 @@ EMAIL: xhai2@uci.edu
           <span class="experience-dates">09.2023 - 12.2023</span>
           <ul>
             <li>
-              Helped students understand core concepts in Boolean logic and
-              discrete math by breaking down abstract topics into clear,
-              approachable explanations.
+              Broke down core Boolean logic and discrete math concepts into
+              clear, approachable explanations for students.
             </li>
             <li>
-              Facilitated discussions during lectures and study hall sessions,
-              adapting explanations based on student questions and real-time
-              feedback.
+              Facilitated lecture and study hall discussions, adapting on the
+              fly to student questions.
             </li>
             <li>
-              Tested exams for clarity and appropriate difficulty levels, making
-              sure questions were fair and understandable for all students.
+              Reviewed exams for clarity and fairness before they went out.
             </li>
             <li>
-              Led review sessions before exams, guiding students to build
-              structured ways of thinking instead of relying on memorization.
+              Led pre-exam review sessions focused on structured problem-solving
+              over memorization.
+            </li>
+          </ul>
+
+          <span class="experience-organization second-course"
+            >COGS 10B: Probability and Inference</span
+          >
+          <span class="experience-dates"
+            >01.2026 - 03.2026, 04.2026 - 06.2026</span
+          >
+          <ul>
+            <li>
+              Graded students' weekly homework and exams with the instructor,
+              ensuring consistent and fair evaluation across the course.
+            </li>
+            <li>
+              Held regular office hours to answer student questions on
+              probability, statistical inference, and R-based applications.
+            </li>
+            <li>
+              Prepared and provided students with comprehensive lecture notes
+              and review materials to support exam preparation.
             </li>
           </ul>
         </div>
