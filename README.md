@@ -20,22 +20,11 @@ I graduated from **UC Irvine** with a double major in **Cognitive Science** and 
 
 ---
 
-## Featured Project / 精选项目
-
-**TreeHole EchoAI**: an anonymous peer-support space for UCI students, evolved from a 2025 UX course project into an AI product where AI helps students find each other instead of chatting with them.
-
-**TreeHole EchoAI**：面向 UCI 学生的匿名互助平台，由 2025 年的 UX 课程项目发展为一款 AI 产品：AI 的作用是帮学生找到彼此，而不是陪他们聊天。
-
-[Live Demo](https://treehole-echoai.vercel.app/) · [GitHub](https://github.com/AiiiiDannn/treehole-echoai)
-
----
-
 ## Features / 网站功能
 
 - **Animated Navigation Bar** / 带动画效果的导航栏
 - **Smooth Scroll & Fade Effects** / 页面滚动和淡入动效
 - **Project Highlights** / 展示多个真实项目（含 Demo / GitHub / Figma 链接）
-- **Project Evolution Timeline** / 展示项目从 v1 到 v2 的演化过程
 - **Experience Section** / 展示研究、实习与教学经历
 - **Contact Form** / 简洁的联系表单，便于直接发送消息
 - **Responsive Design** / 适配桌面与移动设备
@@ -45,16 +34,16 @@ I graduated from **UC Irvine** with a double major in **Cognitive Science** and 
 ## Tech Stack / 技术栈
 
 - **Programming / 编程**: Python, Java, C++, SQL, JavaScript, TypeScript, R, MATLAB
-- **Machine Learning, AI & Data / 机器学习、AI 与数据**: NumPy, Pandas, Scikit-learn, PyTorch, TensorFlow, OpenCV, Jupyter, LangChain, RAG, LLM Fine-tuning, Data Pipelines
-- **Software, Systems & Tools / 软件、系统与工具**: Git, Docker, ROS2, HTML/CSS, React, Node.js, RESTful API, MongoDB
-- **Design / 设计**: Figma (UI Prototyping / UI 设计)
+- **Machine Learning, AI & Data / 机器学习、AI 与数据**: Scikit-learn, PyTorch, OpenCV, Jupyter, LangChain, RAG, LLM Fine-tuning
+- **Software, Systems & Tools / 软件、系统与工具**: Git, Docker; HTML, CSS, Figma, React, Node.js, RESTful API
 - etc. I can always do something beyond what I listed here!
 
 ---
 
 ## Contact / 联系方式
 
-- Email: nhai [at] hsph [dot] harvard [dot] edu
+- School Email: nhai [at] hsph [dot] harvard [dot] edu
+- Personal Email: aiiiidannn [at] gmail [dot] com
 - [LinkedIn](https://www.linkedin.com/in/aiden-hai/)
 - [GitHub](https://github.com/AiiiiDannn)
 
